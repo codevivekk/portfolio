@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { threejs } from "../../../public/assets/icons";
 import {
   dljproduce,
   flexforce,
