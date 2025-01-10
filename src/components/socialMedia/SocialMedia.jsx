@@ -72,6 +72,10 @@ const SocialIcon = ({ url, initialPosition, link }) => {
 const SocialMedia = () => {
   return (
     <>
+      <div className="text-center flex items-center justify-center text-size gap-4 py-4  border-y-4">
+        <a href="mailto:codevivekk@gmail.com" target="_blank" className="">codevivekk@gmail.com</a>
+      </div>
+
       <div className="relative w-full h-screen">
         <Canvas
           className="!h-screen"
@@ -116,9 +120,6 @@ const SocialMedia = () => {
             <Preload all />
           </Suspense>
         </Canvas>
-      </div>
-      <div className="text-center flex items-center justify-center text-size gap-4 py-4  border-y-4">
-        <a href="mailto:codevivekk@gmail.com" target="_blank" className="">codevivekk@gmail.com</a>
       </div>
     </>
   );
