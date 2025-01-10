@@ -1,5 +1,5 @@
+"use client"
 import dynamic from "next/dynamic";
-
 import Experience from "@/components/Experience/Experience";
 import HomeSection from "@/components/HomeSection/HomeSection";
 const MyInfo = dynamic(() => import("@/components/MyInfo/MyInfo"), { ssr: false });
@@ -9,6 +9,17 @@ import Skills from "@/components/skills/Skills";
 import SocialMedia from "@/components/socialMedia/SocialMedia";
 
 export default function Home() {
+  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, []);
+
+
   return (
     <main className="text-white">
       <SocialMedia />

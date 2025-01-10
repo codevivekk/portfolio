@@ -7,14 +7,6 @@ import { mountains_front } from "../../../public/assets/parallex";
 
 const HomeSection = () => {
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth",
-      });
-    }
-  }, []);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
