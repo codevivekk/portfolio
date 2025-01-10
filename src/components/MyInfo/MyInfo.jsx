@@ -24,7 +24,7 @@ const MyInfo = () => {
           ensures efficient and high-quality solutions for a wide range of
           technical challenges.
         </p>
-        <Link href="https://drive.google.com/file/d/1t-rNivw13dT7ci5qwhAjg2yq17fw1fB-/view?usp=drive_link" className="btn border-[1px] w-fit p-3 rounded-2xl hover-scale-on">
+        <Link target="_blank" href="https://drive.google.com/file/d/1t-rNivw13dT7ci5qwhAjg2yq17fw1fB-/view?usp=drive_link" className="btn border-[1px] w-fit p-3 rounded-2xl hover-scale-on">
           Download Resume
         </Link>
       </div>
