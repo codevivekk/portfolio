@@ -7,7 +7,7 @@ import Link from "next/link";
 const MyInfo = () => {
 
   return (
-    <div className="text-white font-poppins flex  flex-col md:flex-row justify-center  px-20 min-h-screen">
+    <div className="text-white font-poppins flex  flex-col md:flex-row justify-center  px-10 lg:px-20 min-h-screen mt-10 lg:mt-0">
       <div className="info-wrapper flex flex-col justify-center gap-7 md:w-1/2 w-full  ">
         <div className="p-2 rounded-3xl text-sm border-[1px] flex justify-center items-center border-white w-fit gap-3 px-4">
           {" "}

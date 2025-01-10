@@ -106,7 +106,7 @@ const SelectedProjects = () => {
     },
   ];
   return (
-    <div className="project-wrapper px-20 py-10">
+    <div className="project-wrapper px-10 lg:px-20 py-10">
       <h2 className="text-center text-4xl  my-5 lg:mb-10">Selected Projects</h2>
       <div className="card-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects?.map((ele) => {

@@ -11,7 +11,6 @@ export default function Home() {
 
   return (
     <main className="text-white">
-      {/* <HomeSection/> */}
       <MyInfo/>
       <SelectedProjects/>
       <Skills/>

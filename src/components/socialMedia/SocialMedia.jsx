@@ -118,7 +118,6 @@ const SocialMedia = () => {
         </Canvas>
       </div>
       <div className="text-center flex items-center justify-center text-size gap-4 py-4  border-y-4">
-        <span className="">Connect with me: </span>
         <a href="mailto:codevivekk@gmail.com" target="_blank" className="">codevivekk@gmail.com</a>
       </div>
     </>
