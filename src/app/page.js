@@ -9,15 +9,15 @@ import SocialMedia from "@/components/socialMedia/SocialMedia";
 import { useEffect, useLayoutEffect } from "react";
 
 export default function Home() {
-  
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: "smooth",
-      });
-    }
-  }, []);
+
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     window.scrollTo({
+  //       top: document.body.scrollHeight,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // }, []);
 
 
   return (
