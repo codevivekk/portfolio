@@ -26,11 +26,11 @@ const SocialIcon = ({ url, initialPosition, link }) => {
   const scale = viewport.width < 6 ? 0.1 : 0.17;
 
   const handlePointerOver = () => {
-    // document.body.style.cursor = "pointer";
+    document.body.style.cursor = "pointer";
     setHovered(true);
   };
   const handlePointerOut = () => {
-    // document.body.style.cursor = "";
+    document.body.style.cursor = "";
     setHovered(false);
   };
 

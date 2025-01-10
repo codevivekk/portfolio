@@ -1,4 +1,4 @@
-// Import necessary modules
+"use client"
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import { mountains_front } from "../../../public/assets/parallex";
 
 const HomeSection = () => {
+  
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
