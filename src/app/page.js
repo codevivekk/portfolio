@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+
 import Experience from "@/components/Experience/Experience";
 import HomeSection from "@/components/HomeSection/HomeSection";
 const MyInfo = dynamic(() => import("@/components/MyInfo/MyInfo"), { ssr: false });
