@@ -9,13 +9,16 @@ import SocialMedia from "@/components/socialMedia/SocialMedia";
 import { useEffect, useLayoutEffect } from "react";
 
 export default function Home() {
-  useLayoutEffect(() => {
-    // Scroll to the bottom of the page after the component mounts
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth", // 
-    });
+  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, []);
+
 
   return (
     <main className="text-white">
