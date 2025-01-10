@@ -2,7 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { threejs } from "../../../public/assets/icons";
 import {
+  dljproduce,
   flexforce,
+  kobracomics,
+  miaumiaubaby,
   nodesale,
   qrnscan,
   qsafewallet,
@@ -81,10 +84,31 @@ const SelectedProjects = () => {
       description:
         "Flexforce is job portal website where client can search candidates for there projects  ",
     },
+    {
+      company: "Freelancing",
+      img: dljproduce,
+      techstack: ["Wordpress"],
+      link: "https://www.dljproduce.com/",
+      title: "DLJ Produce",
+    },
+    {
+      company: "Freelancing",
+      img: kobracomics,
+      techstack: ["Wordpress"],
+      link: "https://kobracomics.com/",
+      title: "Kobracomics",
+    },
+    {
+      company: "Freelancing",
+      img: miaumiaubaby,
+      techstack: ["Wordpress"],
+      link: "https://miaumiaubaby.com/",
+      title: "Miaumiaubaby",
+    },
   ];
   return (
     <div className="project-wrapper px-20 py-10">
-      <h2 className="text-center text-4xl  my-5">Selected Projects</h2>
+      <h2 className="text-center text-4xl  my-5 lg:mb-10">Selected Projects</h2>
       <div className="card-wrapper grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects?.map((ele) => {
           return (

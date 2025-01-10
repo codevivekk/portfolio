@@ -13,7 +13,7 @@ import {
   socket,
   threejs,
   typescript,
-} from "../../../public/assets/icons";
+} from "../../../public/assets/icons/skills";
 import Image from "next/image";
 
 const Skills = () => {
