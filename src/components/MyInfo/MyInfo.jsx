@@ -1,24 +1,9 @@
-"use client";
 import React from "react";
 import Lottie from "lottie-react";
 import { coding } from "../../../public/assets/icons";
+import Link from "next/link";
 
 const MyInfo = () => {
-
-  const downloadFileAtURL = async () => {
-    try {
-      const fileId = "1t-rNivw13dT7ci5qwhAjg2yq17fw1fB-";
-      const url = `https://drive.google.com/uc?export=download&id=${fileId}`;
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "August-NewsLetter.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   return (
     <div className="text-white font-poppins flex  flex-col md:flex-row justify-center  px-20 min-h-screen">
@@ -38,9 +23,9 @@ const MyInfo = () => {
           ensures efficient and high-quality solutions for a wide range of
           technical challenges.
         </p>
-        <button onClick={downloadFileAtURL} className="btn border-[1px] w-fit p-3 rounded-2xl hover-scale-on">
+        <Link href="https://drive.google.com/file/d/1t-rNivw13dT7ci5qwhAjg2yq17fw1fB-/view?usp=drive_link" className="btn border-[1px] w-fit p-3 rounded-2xl hover-scale-on">
           Download Resume
-        </button>
+        </Link>
       </div>
       <div className="md:w-1/2 w-full flex justify-center mt-10 md:mt-0">
         <Lottie
